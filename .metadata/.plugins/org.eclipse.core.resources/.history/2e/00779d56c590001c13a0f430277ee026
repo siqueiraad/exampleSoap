@@ -11,7 +11,7 @@ public class TesteClienteSerasa {
 	public static void main(String[] args) throws MalformedURLException {
 
 //		WsgestordecisaoSoap cliente = new Wsgestordecisao().getWsgestordecisaoSoap();
-//		String resultado = cliente.analisarCredito(null, "", "", "xxxx", "xxxx", "75390989023", 10, null, false, false, null);
+//		String resultado = cliente.analisarCredito(null, "", "", "65329295", "HomEbi@9", "75390989023", 10, null, false, false, null);
 //		System.out.println("Retorno: " + resultado);
 		
 		String nsURI = "https://sitenet05.serasa.com.br/wsgestordecisao/wsgestordecisao";
@@ -24,7 +24,7 @@ public class TesteClienteSerasa {
         Service service = Service.create(url, qname);
         
         WsgestordecisaoSoap cliente = service.getPort(WsgestordecisaoSoap.class);
-        String resultado = cliente.analisarCredito(null, "", "", "xxxx", "xxxx", "75390989023", 10, null, false, false, null);
+        String resultado = cliente.analisarCredito(null, "", "", "65329295", "HomEbi@9", "75390989023", 10, null, false, false, null);
         System.out.println("Retorno: " + resultado);
 	}
 
