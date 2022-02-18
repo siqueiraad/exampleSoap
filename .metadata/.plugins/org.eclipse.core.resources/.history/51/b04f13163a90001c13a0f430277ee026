@@ -1,0 +1,10 @@
+package br.com.adsdevelopment.serasa.gestorcredito.soap;
+
+public class TesteClienteSerasa {
+
+	public static void main(String[] args) {
+
+		WsgestordecisaoSoap cliente = new Wsgestordecisao().getWsgestordecisaoSoap();
+	}
+
+}
